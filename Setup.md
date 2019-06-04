@@ -8,6 +8,7 @@
 
 ## Start RPi
 - Put sd card in raspberry pi and startup
+- echo "Acquire::ForceIPv4 "true";" | sudo tee /etc/apt/apt.conf.d/99force-ipv4
 - sudo aptitude update && sudo apptitude full-upgrade && sudo aptitude install bluealsa
 - replace /lib/systemd/system/bluealsa.service with :
       
